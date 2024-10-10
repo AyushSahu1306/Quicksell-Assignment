@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+
+.header {
+    padding: 20px 40px 0px 40px;
+} 
+
+
+.controls {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  box-shadow:0px 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.popup {
+  margin: 10px 37px;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popup-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.popup-content div {
+  margin-bottom: 15px;
+}
+
+.popup-grouping,.popup-sorting{
+  display: flex;
+  justify-content: space-between;
+}
+.popup-grouping select,
+.popup-sorting select {
+  width: 50%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+} 
+
+.dashboard{
+  background-color: rgba(237, 241, 241, 0.527);
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+.ticket-column {
+  width: 300px;
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  /* background-color: #f9f9f9; */
+}
+
+.ticket-column h3{
+  font-size: medium;
+  text-align: center;
+}
+.ticket-list {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.ticket {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.ticket .head {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.icon{
+  background-color: gray;
+  border-radius: 50%;
+  padding: 2px;
+  text-align: center;
+  width: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tag{
+  padding: 2px;
+  font-size: small;
+  border: 1px solid rgb(219, 216, 216);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
